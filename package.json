@@ -7,7 +7,9 @@
     "build": "webpack --config webpack.prod.js",
     "serve": "webpack-dev-server --config webpack.dev.js",
     "build-server": "webpack-dev-server --config webpack.prod.js",
-    "watch-svg": "gulp watch-svg"
+    "svg": "gulp svg",
+    "total-build": "gnome-terminal --tab -e 'npm run build' && npm run svg",
+    "total-serve": "gnome-terminal --tab -e 'npm run serve' && npm run svg"
   },
   "author": "",
   "license": "ISC",
@@ -44,5 +46,7 @@
     "webpack-dev-server": "^3.1.10",
     "webpack-merge": "^4.2.2"
   },
-  "dependencies": {}
+  "dependencies": {
+    "gulp-cheerio": "^1.0.0"
+  }
 }

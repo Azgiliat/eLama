@@ -1,0 +1,62 @@
+.free-start {
+  background: #F2F3F8;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.free-start__header {
+  margin-bottom: 1rem;
+  @media(min-width: $desktop-width) {
+    grid-area: head;
+    position: relative;
+
+    &::before {
+      @include pseudo-element;
+      width: 227px;
+      height: 55px;
+      background-image: url("./../img/icons/long-arrow.svg");
+      left: 60%;
+      top: -40%;
+    }
+  }
+}
+
+.free-start__text {
+  font-weight: 100;
+  margin: 0 0 1rem;
+  text-align: center;
+  @media(min-width: $desktop-width) {
+    text-align: left;
+    padding-right: 1.3rem;
+
+    &:nth-child(3) {
+      grid-area: text;
+      align-self: center;
+      position: relative;
+
+      &::before {
+        @include pseudo-element;
+        width: 100px;
+        height: 12px;
+        background-image: url("./../img/icons/arrow.svg");
+        background-repeat: no-repeat;
+        top: 50%;
+        left: 95%;
+      }
+    }
+
+    &:nth-child(4) {
+      grid-area: text2;
+      align-self: center;
+      padding-left: 2rem;
+    }
+  }
+}
+
+.free-start__brief {
+  order: 4;
+  @media(min-width: $desktop-width) {
+    order: 0;
+    grid-area: brief;
+  }
+}

@@ -1,0 +1,31 @@
+.link {
+  color: #039BE6;
+  font-size: 16px;
+  line-height: 28px;
+  text-decoration: none;
+  transition: color 0.5s;
+  @media(min-width: $desktop-width) {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  &--light {
+    color: #00B3FF;
+  }
+
+  &--phone {
+    color: #ffffff;
+
+    &:hover {
+      color: #00B3FF;
+    }
+  }
+
+  &--header {
+    color: #1D1D39;
+
+    &:hover {
+      color: #039BE6;
+    }
+  }
+}

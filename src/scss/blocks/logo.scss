@@ -1,0 +1,20 @@
+.logo {
+  fill: #039BE6;
+  @media(min-width: $tablet-width) {
+    display: flex;
+  }
+}
+
+.logo__lama {
+  @media(min-width: $tablet-width) {
+    margin-right: 0.8rem;
+  }
+}
+
+.logo__elama {
+  display: none;
+  @media(min-width: $tablet-width) {
+    display: block;
+    fill: #03973D;
+  }
+}

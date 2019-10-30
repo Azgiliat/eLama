@@ -1,0 +1,44 @@
+.container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 540px;
+  min-width: 320px;
+  padding-left: 15px;
+  padding-right: 15px;
+  @media(min-width: $tablet-width) {
+    max-width: 850px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  @media(min-width: $desktop-width) {
+    max-width: 1240px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  &--start {
+    display: grid;
+    @media(min-width: $tablet-width) {
+      max-width: 550px;
+      margin: 0 auto;
+    }
+    @media(min-width: $desktop-width) {
+      max-width: 1240px;
+      padding-left: 40px;
+      padding-right: 40px;
+      grid-template: "head text text2" "brief text text2";
+      grid-column-gap: 5.7rem;
+      align-items: end;
+    }
+  }
+
+  &--settings {
+    @media(min-width: $desktop-width) {
+      display: grid;
+      grid-template: "screen ." "screen ." "screen .";
+      grid-template-columns: 400px auto;
+      grid-column-gap: 15%;
+      align-items: end;
+    }
+  }
+}

@@ -1,0 +1,38 @@
+.header {
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+}
+
+.header__wrapper {
+  width: 100%;
+  max-width: 540px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__user-navigation {
+  @media(min-width: $desktop-width) {
+    margin-left: 20rem;
+  }
+}
+
+.header__menu {
+  display: none;
+  @media(min-width: $tablet-width) {
+    display: block;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+}
+
+.header__menu-item {
+  margin-right: 1rem;
+
+  &:last-child {
+    margin: 0;
+  }
+}

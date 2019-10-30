@@ -1,156 +1,179 @@
 <html>
-<img inline src="src/img/sprite.svg" class="sprite">
+<div class="sprite">
+  <img inline src="src/img/sprite.svg" class="sprite">
+</div>
 
 <head>
-  <title>Vue StarWarsAPI</title>
+  <title>eLama test</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
-<body>
+<body class="overlay--none">
   <h1 class="visually-hidden">eLama - лучшая реклама в интернете</h1>
   <header class="header">
-    <div class="logo header__logo">
-    </div>
-    <nav class="site-navigation header__site-navigation" <ul class="header__menu">
-      <li class="header__menu-item">
-        С чего начать
-      </li>
-      <li class="header__menu-item">
-        Инструменты
-      </li>
-      <li class="header__menu-item">
-        Услуги
-      </li>
-      </ul>
-    </nav>
-    <div class="user-navigation header__user-navigation">
-      <a class="button button--login user-navigation__login" href="#">Вход
-      </a>
+    <div class="header__wrapper container">
+      <div class="logo header__logo">
+        <svg class="logo__lama" width="50px" height="50px">
+          <use xlink:href="#lama">
+        </svg>
+        <svg class="logo__elama" width="75px" height="50px">
+          <use xlink:href="#elama">
+        </svg>
+      </div>
+      <div id="mobile-nav">
+      </div>
+      <nav class="site-navigation header__site-navigation">
+        <ul class="header__menu">
+          <li class="header__menu-item">
+            <a class="link link--header header__link" href="#">С чего начать</a>
+          </li>
+          <li class="header__menu-item">
+            <a class="link link--header header__link" href="#">Инструменты</a>
+          </li>
+          <li class="header__menu-item">
+            <a class="link link--header header__link" href="#">Услуги</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="user-navigation header__user-navigation">
+        <a class="button button--login user-navigation__login" href="#">Вход
+        </a>
+        <button class="user-navigation__mobile-button">
+          <span class="user-navigation__mobile-burger">
+          </span>
+        </button>
+      </div>
     </div>
   </header>
   <main class="main">
     <section class="promo">
-      <h2 class="promo__header">Возьмем заботу о вашей интернет-рекламе на себя</h2>
-      <div class="promo__info">
-        <p class="promo__text">
-          Поможем найти покупателей с помощью контекстной и таргетированной рекламы и расскажем о результатах на понятном языке.
-        </p>
-        <a class="button button--promo promo__button brief" href="#">Заполнить бриф</a>
-        <a class="promo__link" href="#">Получить консультацию</a>
+      <div class="container">
+        <h2 class="promo__header headers headers--slim">Возьмем заботу о вашей интернет-рекламе на себя</h2>
+        <div class="promo__info">
+          <p class="promo__text">
+            Поможем найти покупателей с помощью контекстной и таргетированной рекламы и расскажем о результатах на понятном языке.
+          </p>
+          <div class="promo__links">
+            <a class="button button--promo promo__button brief" href="#">Заполнить бриф</a>
+            <a class="promo__link link link--light" href="#">Получить консультацию</a>
+          </div>
+        </div>
       </div>
     </section>
     <section class="ads-advantages">
-      <h2 class="ads-advantages__header header">Ведем контекстную и таргетированную рекламу</h2>
-      <div class="ads-advantages__container">
-        <div class="advantage ads-advantages__advantage">
-          <svg class="advantage__icon">
-            <use xlink:href="monitor">
-          </svg>
-          <p class="advantage__title">
-          </p>
-          <p class="advantage__text">
-          </p>
-        </div>
-        <div class="advantage ads-advantages__advantage">
-          <svg class="advantage__icon">
-            <use xlink:href="student">
-          </svg>
-          <p class="advantage__title">
-          </p>
-          <p class="advantage__text">
-          </p>
-        </div>
-        <div class="advantage ads-advantages__advantage">
-          <svg class="advantage__icon">
-            <use xlink:href="draph">
-          </svg>
-          <p class="advantage__title">
-          </p>
-          <p class="advantage__text">
-          </p>
+      <div class="container">
+        <h2 class="ads-advantages__header headers">Ведем контекстную и таргетированную рекламу</h2>
+        <div class="ads-advantages__container">
+          <div class="advantage ads-advantages__advantage">
+            <svg class="advantage__icon" width="50px" height="50px">
+              <use xlink:href="#monitor">
+            </svg>
+            <p class="advantage__title">Привлекаем целевой трафик на сайт
+            </p>
+            <p class="advantage__text">Создаем и оптимизируем рекламные кампании с учетом особенностей вашего бизнеса, чтобы вы получали максимум потенциальных клиентов
+            </p>
+          </div>
+          <div class="advantage ads-advantages__advantage">
+            <svg class="advantage__icon" width="50px" height="50px">
+              <use xlink:href="#student">
+            </svg>
+            <p class="advantage__title">Совершенствуем нашу работу
+            </p>
+            <p class="advantage__text">Используем все возможности рекламных систем и eLama для результативной работы с рекламными кампаниями
+            </p>
+          </div>
+          <div class="advantage ads-advantages__advantage">
+            <svg class="advantage__icon" width="50px" height="50px">
+              <use xlink:href="#graph">
+            </svg>
+            <p class="advantage__title">Помогаем стать эффективнее
+            </p>
+            <p class="advantage__text">Выбираем метрики в соответствии с вашими бизнес-задачами и понятно рассказываем о результатах рекламы
+            </p>
+          </div>
         </div>
       </div>
     </section>
     <section class="settings">
-      <img class="settings__img" src="">
-      <h2 class="settings__header header">Настроим системы веб-аналитики или доработаем текущие настройки
-      </h2>
-      <div class="settings__info">
-        <p class="settigs__text">Создадим цели, события и свяжем системы аналитики с рекламными системами, чтобы вы получали правильные данные
-        </p>
-        <a class="brief button settings__button" href="#">Заполнить бриф</a>
-        <a class="settings__link" href="#">Получить консультацию</a>
+      <div class="container container--settings">
+        <div class="center">
+          <img class="settings__img" src="./img/computer.png">
+        </div>
+        <h2 class="settings__header headers">Настроим системы веб-аналитики или доработаем текущие настройки
+        </h2>
+        <div class="settings__info">
+          <p class="settings__text">Создадим цели, события и свяжем системы аналитики с рекламными системами, чтобы вы получали правильные данные
+          </p>
+          <div class="settings__links">
+            <a class="brief button settings__button" href="#">Заполнить бриф</a>
+            <a class="settings__link link link--light" href="#">Получить консультацию</a>
+          </div>
+        </div>
       </div>
     </section>
     <section class="free-start">
-      <div class="header-container">
-        <h2 class="free-start__header header">Бесплатная стартовая компания</h2>
+      <div class="container container--start">
+        <h2 class="free-start__header headers">Бесплатная стартовая кампания</h2>
         <a class="brief free-start__brief" href="#">Заполнить бриф</a>
+        <p class="free-start__text">Для клиентов с любыми бюджетами создадим стартовую кампанию бесплатно. Подберем ключи, напишем объявления, настроим инструменты автоматизации.
+        </p>
+        <p class="free-start__text">Для этого пополните баланс на 10 000 рублей и заполните бриф
+        </p>
       </div>
-      <p class="free-start__text">Для клиентов с любыми бюджетами создадим стартовую кампанию бесплатно. Подберем ключи, напишем объявления, настроим инструменты автоматизации.
-      </p>
-      <p class="free-start__text">Для этого пополните баланс на 10 000 рублей и заполните бриф
-      </p>
     </section>
   </main>
   <footer class="footer">
-    <ul class="footer__links">
-      <li class="footer__links-item">
-        <a class="link footer__link" href="#">С чего начать</a>
-      </li>
-      <li class="footer__links-item">
-        <a class="link footer__link" href="#">Инструменты</a>
-      </li>
-      <li class="footer__links-item">
-        <a class="link footer__link" href="#">Агентам и фрилансерам</a>
-      </li>
-      <li class="footer__links-item">
-        <a class="link footer__link" href="#">Помощь</a>
-      </li>
-    </ul>
-    <ul class="footer__contacts">
-      <li class="footer__contacts-item">
-        <a class="footer__contact-logo" href="#mainpage">
-          <svg class="lama">
-            <use xlink:href="lama">
-          </svg>
+    <div class="container">
+      <ul class="footer__links">
+        <li class="footer__links-item">
+          <a class="link footer__link" href="#">С чего начать</a>
+        </li>
+        <li class="footer__links-item">
+          <a class="link footer__link" href="#">Инструменты</a>
+        </li>
+        <li class="footer__links-item">
+          <a class="link footer__link" href="#">Агентам и фрилансерам</a>
+        </li>
+        <li class="footer__links-item">
+          <a class="link footer__link" href="#">Помощь</a>
+        </li>
+      </ul>
+      <ul class="footer__contacts">
+        <li class="footer__contacts-item">
+          <a class="footer__contact-logo" href="#mainpage">
+            <svg class="lama" width="50px" height="50px">
+              <use xlink:href="#lama">
+            </svg>
+          </a>
+        </li>
+        <li class="footer__contacts-item">
+          <a class="footer__phone link link--phone" href="tel:84992702790">8 (499) 270-27-90</a>
+          <p class="footer__location">Москва</p>
+        </li>
+        <li class="footer__contacts-item">
+          <a class="footer__phone  link link--phone" href="tel:88123184054">8 (812) 318-40-54</a>
+          <p class="footer__location">Санкт-Петербург</p>
+        </li>
+        <li class="footer__contacts-item">
+          <a class="footer__phone  link link--phone" href="88005003190">8 (800) 500-31-90</a>
+          <p class="footer__location">Звонки по России</p>
+        </li>
+        <li class="footer__contacts-item footer__contacts-item--fat">
+          <a class="footer__email link--light" href="mailto:milo@elama.ru">milo@elama.ru</a>
+          <a class="footer__requisites link--light" href="#">Реквизиты</a>
+        </li>
+        <li class="footer__contacts-item footer__contacts-item--social-networks">
+      </ul>
+      <div class="footer__bottom">
+        <p class="footer__copyright">© 2008—2018 eLama.ru. Все права защищены
+        </p>
+        <a class="footer__politic link" href="#">Политика в отношении обработки персональных данных
         </a>
-      </li>
-      <li class="footer__contacts-item">
-        <p class="footer__phone">8 (499) 270-27-90</p>
-        <p class="footer__location">Москва</p>
-      </li>
-      <li class="footer__contacts-item">
-        <p class="footer__phone">8 (812) 318-40-54</p>
-        <p class="footer__location">Санкт-Петербург</p>
-      </li>
-      <li class="footer__contacts-item">
-        <p class="footer__phone">8 (800) 500-31-90</p>
-        <p class="footer__location">Звонки по России</p>
-      </li>
-      <li class="footer__contacts-item">
-        <p class="footer__email">8 (800) 500-31-90</p>
-        <a class="footer__requisites" href="#">Реквизиты</a>
-      </li>
-      <li class="footer__contacts-item footer__contacts-item--social-networks">
-        <ul class="social-networks">
-          <li class="social-networks__item social-networks__item--vk">
-            <a class="social-networks__link" href="#">
-              <svg class="social-networks__icon social-networks__icon--vk">
-                <use xlink:href="vk">
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </li>
-    </ul>
-    <div class="footer__bottom">
-      <p class="footer__copyright">© 2008—2018 eLama.ru. Все права защищены
-      </p>
-      <p class="footer__politic">Политика в отношении обработки персональных данных
-      </p>
+      </div>
     </div>
   </footer>
 </body>
+<div class="popup popup--brief">
+</div>
 
 </html>

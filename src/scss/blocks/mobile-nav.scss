@@ -1,0 +1,8 @@
+.mobile-nav {
+  display: none;
+  width: 266px;
+  padding: 30px 35px 21px;
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}

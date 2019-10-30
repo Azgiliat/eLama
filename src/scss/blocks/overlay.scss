@@ -1,0 +1,25 @@
+.overlay {
+  &::before {
+    @include pseudo-element;
+    width: 100vw;
+    height: 100vh;
+    z-index: 2;
+    position: fixed;
+    background-color: rgba(29,29,57,.9);
+    transition: transform 1s;
+    transform: translateX(0);
+  }
+
+  &--none {
+    &::before {
+      @include pseudo-element;
+      width: 100vw;
+      height: 100vh;
+      transform: translateX(-100vw);
+      z-index: 2;
+      position: fixed;
+      background-color: rgba(29,29,57,.9);
+      transition: transform 1s;
+    }
+  }
+}

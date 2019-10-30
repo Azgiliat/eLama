@@ -1,0 +1,19 @@
+.brief {
+  background-color: #03973D;
+  border-radius: 50px;
+  color: #ffffff;
+  padding: 17px 40px;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  transition: background-color 0.5s;
+  @media(min-width: $desktop-width) {
+    max-width: 190px;
+    font-size: 14px;
+    line-height: 26px;
+  }
+
+  &:hover {
+    background-color: #27bc62;
+  }
+}

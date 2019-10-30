@@ -1,0 +1,6 @@
+.center {
+  display: flex;
+  @media(min-width: $desktop-width) {
+    grid-area: screen;
+  }
+}

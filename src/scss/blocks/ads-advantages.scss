@@ -1,0 +1,19 @@
+.ads-advantages {
+  margin-bottom: 3rem;
+}
+
+.ads-advantages__container {
+  @media(min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.ads-advantages__advantage {
+  margin-bottom: 2rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

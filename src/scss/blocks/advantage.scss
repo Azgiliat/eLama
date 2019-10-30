@@ -1,0 +1,38 @@
+.advantage {
+  fill: #03973D;
+  box-shadow: 0 0.8rem 2.4rem rgba(29,29,57,.2);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  @media(min-width: $desktop-width) {
+    width: 30%;
+    box-shadow: none;
+  }
+}
+
+.advantage__icon {
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.advantage__title {
+  margin: 0;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  @media(min-width: $desktop-width) {
+    text-align: left;
+  }
+}
+
+.advantage__text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 100;
+  text-align: center;
+  @media(min-width: $desktop-width) {
+    text-align: left;
+  }
+}
