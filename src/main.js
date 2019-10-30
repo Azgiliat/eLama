@@ -1,6 +1,7 @@
 import style from './scss/style.scss';
 import sprite from './img/sprite.svg';
 import computer from './img/computer.png';
+import webps from './img/computer.webp';
 import Vue from 'vue';
 import App from './components/social-networks-container.vue';
 import mobile_nav from './components/mobile_nav.vue';
