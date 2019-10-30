@@ -1,23 +1,25 @@
-<html>
-<div class="sprite">
-  <img inline src="src/img/sprite.svg" class="sprite">
-</div>
+<!DOCTYPE html>
+<html lang="ru">
 
 <head>
+  <meta charset="utf-8">
   <title>eLama test</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body class="overlay--none">
+  <div class="sprite">
+    <img inline src="src/img/sprite.svg" class="sprite" alt="svg icons sprite">
+  </div>
   <h1 class="visually-hidden">eLama - лучшая реклама в интернете</h1>
   <header class="header">
     <div class="header__wrapper container">
       <div class="logo header__logo">
         <svg class="logo__lama" width="50px" height="50px">
-          <use xlink:href="#lama">
+          <use xlink:href="#lama"></use>
         </svg>
         <svg class="logo__elama" width="75px" height="50px">
-          <use xlink:href="#elama">
+          <use xlink:href="#elama"></use>
         </svg>
       </div>
       <div id="mobile-nav">
@@ -66,7 +68,7 @@
         <div class="ads-advantages__container">
           <div class="advantage ads-advantages__advantage">
             <svg class="advantage__icon" width="50px" height="50px">
-              <use xlink:href="#monitor">
+              <use xlink:href="#monitor"></use>
             </svg>
             <p class="advantage__title">Привлекаем целевой трафик на сайт
             </p>
@@ -75,7 +77,7 @@
           </div>
           <div class="advantage ads-advantages__advantage">
             <svg class="advantage__icon" width="50px" height="50px">
-              <use xlink:href="#student">
+              <use xlink:href="#student"></use>
             </svg>
             <p class="advantage__title">Совершенствуем нашу работу
             </p>
@@ -84,7 +86,7 @@
           </div>
           <div class="advantage ads-advantages__advantage">
             <svg class="advantage__icon" width="50px" height="50px">
-              <use xlink:href="#graph">
+              <use xlink:href="#graph"></use>
             </svg>
             <p class="advantage__title">Помогаем стать эффективнее
             </p>
@@ -99,7 +101,7 @@
         <div class="center">
           <picture>
             <source srcset="./img/computer.webp" type="image/webp">
-            <img class="settings__img" src="./img/computer.png">
+            <img class="settings__img" src="./img/computer.png" alt="eLama computer">
           </picture>
         </div>
         <h2 class="settings__header headers">Настроим системы веб-аналитики или доработаем текущие настройки
@@ -145,7 +147,7 @@
         <li class="footer__contacts-item">
           <a class="footer__contact-logo" href="#mainpage">
             <svg class="lama" width="50px" height="50px">
-              <use xlink:href="#lama">
+              <use xlink:href="#lama"></use>
             </svg>
           </a>
         </li>
@@ -175,8 +177,8 @@
       </div>
     </div>
   </footer>
+  <div class="popup popup--brief">
+  </div>
 </body>
-<div class="popup popup--brief">
-</div>
 
 </html>
