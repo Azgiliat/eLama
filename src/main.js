@@ -16,7 +16,8 @@ mobileButton.addEventListener('click', () => {
 });
 
 briefs.forEach(brief => {
-  brief.addEventListener('click', ()=> {
+  brief.addEventListener('click', (evt)=> {
+    evt.preventDefault();
     //тут должно появляться модальное окно с неким брифом
     //не успел его изобразить
   });
